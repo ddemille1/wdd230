@@ -1,3 +1,48 @@
 @media only screen and (min-width: 32.5em){
 
+    header {
+        background-color: navy;
+        border-radius: 1em;
+        box-shadow: 10px 5px 5px gray;
+    }
+
+    footer {
+        background-color: navy;
+        border-radius: 1em;
+        box-shadow: 10px 5px 5px gray;
+    }
+    /*body {
+        width: 800px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    header {background-color: Navy;
+            border-radius: 1em;
+            color: White;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 10px 5px 5px gray;
+            }
+    
+    header img 
+        {padding: 5px 0;
+            border-radius: 1rem;}
+    
+    footer {
+        margin: 0 auto;
+        background-color: Navy;
+        border-radius: 1rem;
+        color: White;
+        max-width: 700px;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 10px 5px 5px gray
+        }
+        */
 }
