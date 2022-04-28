@@ -18,6 +18,9 @@ header {background-color: red;
 header img 
     {padding: 5px 0;
         border-radius: 1rem;}
+h1 {font-family: 'Orbitron', sans-serif;}
+
+main {font-family: 'Karla', sans-serif;}
 
 footer {
     margin: 0 auto;
