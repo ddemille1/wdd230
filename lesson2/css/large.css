@@ -1,5 +1,11 @@
 @media only screen and (min-width: 60em){
+    body {max-width: 1020px;}
     main {grid-template-columns: 1fr 1fr 1fr;}
-    main section {margin: 15px;}
-    main section:nth-child(3) {grid-column: span 1;}
+    main section {margin: 15px auto;}
+    main section:nth-child(3) {grid-column: span 1;
+        max-width: 320px;}
+    main section:nth-child(3) h3, main section:nth-child(3) h4{text-align: left;}
+    #ftd {display: block;
+        margin-left: auto;
+    margin-right: auto;}
 }
