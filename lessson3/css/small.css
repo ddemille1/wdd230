@@ -37,3 +37,16 @@ nav a:hover {
     color: black;
     font-weight: bold;
 }
+
+#midnight {background-color: midnightblue;
+color: midnightblue;}
+
+#white {border-style: solid;
+    color: white;
+    border-color: black;
+    border-width: 2px;
+}
+#black {background-color: black;
+color: black;}
+#gray {background-color: gray;
+color: gray;}
