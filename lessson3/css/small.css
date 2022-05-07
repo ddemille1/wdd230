@@ -2,6 +2,7 @@
 body {
     display: block;
     font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -33,7 +34,7 @@ nav li a {
 }
 
 nav a:hover {
-    background-color: gray;
+    background-color: lightgray;
     color: black;
     font-weight: bold;
 }
@@ -48,5 +49,8 @@ color: midnightblue;}
 }
 #black {background-color: black;
 color: black;}
-#gray {background-color: gray;
-color: gray;}
+#gray {background-color: lightgray;
+color: lightgray;}
+
+h1 {font-family: 'Lobster', cursive;
+    }
