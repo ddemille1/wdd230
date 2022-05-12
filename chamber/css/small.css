@@ -1,0 +1,52 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.headerLogo {
+    height: 150px;
+}
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px;
+    margin: auto;
+}
+
+.social {
+    height: 20px;
+    margin: auto 0;
+    padding: 5px;
+}
+
+
+#date {
+    text-align: center;
+    padding: 20px;
+}
