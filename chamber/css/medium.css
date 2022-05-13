@@ -1,5 +1,41 @@
 @media only screen and (min-width: 36rem) {
 
 
+    main {display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    .hero {
+        grid-column: span 3;
+        margin: 10px 0px;
+        grid-row: 1;
+    }
+
+    .news {margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .spotlight {margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 3;
+        display: flex;
+        justify-content: space-around;
     
+    }
+
+    .join {display: grid;
+        margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 4;
+    }
+    .event {margin: 10px 10px 10px 0px;
+        
+        grid-column: span 2;
+        grid-row: 5;
+        }
+    .weather {margin: 10px 0px 10px 10px; 
+        grid-column: 3;
+        grid-row: 5;
+    }    
 }
