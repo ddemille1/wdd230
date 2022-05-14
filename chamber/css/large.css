@@ -8,20 +8,29 @@
 
 
     #largeView {
+        max-width: 600px;
         display: flex;
+        
     }
 
     #largeView ul {
         list-style-type: none;
-        padding-right: 3rem;
+        padding-left: 0;
         margin: auto;
-
+        
+        
+        
+      
+        
+        
     }
 
     #largeView ul li a{
         padding: .8rem 2vw;
+        flex: 0 0 auto;
         text-decoration: none;
-        color: black;
+        color: white;
+        
     }
 
 
