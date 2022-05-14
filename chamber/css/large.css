@@ -2,7 +2,7 @@
     nav ul {
     display: flex;}
     
-    #smallView {
+    .smallView {
         display: none;
     }
 
@@ -25,7 +25,7 @@
     }
 
 
-    #hamburgerBtn {
+    .hamburgerBtn {
         display: none;
     }
 

@@ -13,3 +13,12 @@ document.getElementById("copyright").textContent = year
 let d = new Date(document.lastModified)
 let date = `Last Updated: ${d.getMonth()+1}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
 document.getElementById("lastmodified").textContent = date
+
+
+/*code for responsive hamburger menu*/
+
+const hambutton = document.querySelector('.hamburgerBtn');
+const mainnav = document.querySelector('.navigation');
+
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {hambutton.classList.toggle('pressed')}, false);

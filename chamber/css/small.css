@@ -30,21 +30,40 @@ button {
 
 }
 
+.hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+.pressed span:nth-child(1) {
+    display:none;
+}
+.pressed span:nth-child(2) {
+    display:flex;
+}
+
+
 #largeView {display: none;}
-#smallView ul {
+.smallView ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     
 }
 
-#smallView ul li a{
+.smallView ul li a{
     display: block;
     text-decoration: none;
     list-style: none;
     padding: 5px;
     text-align: center;
     color: black;
+}
+
+.navigation {
+    display: none;
+}
+
+.responsive{
+    display:block;
 }
 
 #date {
