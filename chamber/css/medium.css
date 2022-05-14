@@ -20,7 +20,7 @@
         grid-column: span 3;
         grid-row: 3;
         display: flex;
-        justify-content: space-around;
+        height: 150px;
     
     }
 
@@ -37,5 +37,19 @@
     .weather {margin: 10px 0px 10px 10px; 
         grid-column: 3;
         grid-row: 5;
-    }    
+    }   
+    
+    footer div:nth-child(1) {
+        display: flex;
+        
+    }
+
+    footer div:nth-child(1) img, footer div:nth-child(1) p {
+        margin: auto
+    }
+    .spotlight p {
+        margin: auto;
+        border: 1px solid gray;
+        padding: 60px 110px;
+    }
 }

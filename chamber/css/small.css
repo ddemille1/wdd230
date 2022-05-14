@@ -100,3 +100,16 @@ footer div p {
 footer div:nth-child(2) {
     text-align: center;
 }
+
+.spotlight {
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+}
+.spotlight p:nth-child(3){
+    display: none;
+}
+.spotlight p {
+    margin: auto;
+    border: 1px solid gray;
+    padding: 60px 110px;}

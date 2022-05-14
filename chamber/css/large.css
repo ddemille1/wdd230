@@ -48,7 +48,15 @@ main {display: grid;
     grid-column: 3;
     grid-row: 1 / span 3;
     display: block;
-    height: 93.7%;
+    height: 92.7%;
+}
+
+.spotlight p:nth-child(3) {
+    display: block;
+}
+
+.spotlight p {
+    padding: 75px 50px;
 }
 .weather {margin: 10px;
     grid-column: 1;
