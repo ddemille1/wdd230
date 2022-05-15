@@ -1,14 +1,17 @@
 @media only screen and (min-width: 64rem) {
     nav ul {
-    display: flex;}
-    
+    display: flex;
+
+    ;
+    }
+
     .smallView {
         display: none;
     }
 
 
     #largeView {
-        max-width: 600px;
+        
         display: flex;
         
     }
@@ -17,7 +20,7 @@
         list-style-type: none;
         padding-left: 0;
         margin: auto;
-        
+         
         
         
       
