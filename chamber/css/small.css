@@ -40,9 +40,12 @@ header {
 }
 
 .social {
-    height: 30px;
     margin: auto 0;
     padding: 5px;
+    
+}
+.social img {
+    height: 30px;
 }
 
 button {
@@ -73,6 +76,8 @@ button {
     margin-top: 10px
     
 }
+
+
 
 .smallView ul li a{
     display: block;
