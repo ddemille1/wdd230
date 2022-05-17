@@ -1,0 +1,88 @@
+@media only screen and (min-width: 64rem) {
+    nav ul {
+    display: flex;
+
+    ;
+    }
+
+    .smallView {
+        display: none;
+    }
+
+
+    #largeView {
+        
+        display: flex;
+        
+    }
+
+    #largeView ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: auto;
+         
+        
+        
+      
+        
+        
+    }
+
+    #largeView ul li a{
+        padding: .8rem 2vw;
+        flex: 0 0 auto;
+        text-decoration: none;
+        color: white;        
+    }
+
+    #largeView ul li a:hover{
+        background-color: rgba(255,255,255,.2)
+    }
+
+    .hamburgerBtn {
+        display: none;
+    }
+
+
+main {display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    }
+
+.event {margin: 10px;
+    grid-column: 1;
+    grid-row: 1
+}
+.hero {margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 90%;
+}
+
+.spotlight {margin: 10px;
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    display: block;
+    height: 92.7%;
+}
+
+.spotlight p:nth-child(3) {
+    display: block;
+}
+
+.spotlight p {
+    padding: 75px 50px;
+}
+.weather {margin: 10px;
+    grid-column: 1;
+    grid-row: 2
+}
+.join {
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 3}
+
+.news {margin: 10px;
+    grid-column: 2;
+    grid-row: 3;}
+
+}
