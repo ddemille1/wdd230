@@ -30,4 +30,4 @@ console.log(weekday);
 
 /*code to toggle invite banner based on day of week being Tuesday or Wednesday*/
 const invite = document.querySelector('.classInvite')
-if (weekday == "Tuesday" || weekday == "Thursday") {invite.style.display = 'block';}
+if (weekday == "Monday" || weekday == "Tuesday") {invite.style.display = 'block';}

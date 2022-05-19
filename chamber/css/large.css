@@ -1,4 +1,7 @@
 @media only screen and (min-width: 64rem) {
+    body {
+        max-width: 1400px;
+    }
     nav ul {
     display: flex;
 
@@ -19,14 +22,8 @@
     #largeView ul {
         list-style-type: none;
         padding-left: 0;
-        margin: auto;
-         
-        
-        
-      
-        
-        
-    }
+        margin: auto;  
+         }
 
     #largeView ul li a{
         padding: .8rem 2vw;
@@ -46,43 +43,77 @@
 
 main {display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 230px 360px 1fr;
+    /*grid-template-rows:500px 500px 500px;*/
+    max-width: 1200px;
+    margin: 0 auto;
     }
 
 .event {margin: 10px;
     grid-column: 1;
-    grid-row: 1
+    grid-row: 1;
+    height: 200px;
 }
 .hero {margin: 10px;
     grid-column: 2;
     grid-row: 1 / span 2;
-    height: 90%;
+    height: 560px;
+    overflow: hidden;
+    padding-top: 0;
+    padding-left: 0;
 }
 
+.hero img {
+    height: 100%;
+    object-fit: cover;
+}
 .spotlight {margin: 10px;
     grid-column: 3;
     grid-row: 1 / span 3;
     display: block;
-    height: 92.7%;
+    padding: 0px;
+    padding-top: 10px;
+    height: auto;
+    
+    
 }
 
-.spotlight p:nth-child(3) {
-    display: block;
+
+.spotlight1, .spotlight2, .spotlight3 {
+    padding: 0px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    
 }
 
-.spotlight p {
-    padding: 75px 50px;
+.spotlight3 {
+    display: block;   
+}
+
+.spotlight hr {
+    margin: 4px;
+}
+
+.spotlight h2, .spotlight p {
+    margin: 10px;
 }
 .weather {margin: 10px;
     grid-column: 1;
-    grid-row: 2
+    grid-row: 2;
+    height: 330px;
 }
 .join {
     margin: 10px;
     grid-column: 1;
-    grid-row: 3}
+    grid-row: 3;
+    height: 200px; 
+}
 
 .news {margin: 10px;
     grid-column: 2;
-    grid-row: 3;}
+    grid-row: 3;
+    height: 200px;}
 
 }
+
