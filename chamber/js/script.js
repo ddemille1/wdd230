@@ -22,3 +22,12 @@ const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 hambutton.addEventListener('click', () => {hambutton.classList.toggle('pressed')}, false);
+
+
+/*code for getting day of week written out*/
+let weekday = new Date(c).toLocaleString('en-us', {weekday:'long'});
+console.log(weekday);
+
+/*code to toggle invite banner based on day of week being Tuesday or Wednesday*/
+const invite = document.querySelector('.classInvite')
+if (weekday == "Tuesday" || weekday == "Thursday") {invite.style.display = 'block';}

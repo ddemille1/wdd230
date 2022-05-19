@@ -19,7 +19,8 @@ button.addEventListener('click', function () {
         list.appendChild(delButton);
         }
         input.focus()
-        input.value = ''
+        input.value = ""
+        input.placeholder = ''
         
         
          
