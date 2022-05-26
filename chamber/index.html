@@ -22,7 +22,7 @@
     <header>
         <div class='classInvite'>&#x1F91D; Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <div class="headerWrapper">
-            <img class="headerLogo" src="images/cc-logo.png" alt="Chamber Logo">
+            <img class="headerLogo" src="images/cc-logo.webp" alt="Chamber Logo">
             <h1>Marietta Ohio<br>
             Chamber of Commerce</h1>
                 
@@ -53,7 +53,13 @@
 
     <main>
         <div class="hero">
-            <img src="images/townrsz.jpg" alt="Picture of town">
+            <picture>
+                <source srcset="images/wdd230Medium.jpg" media="(min-width: 36rem) and (max-width: 64rem)">
+                <source srcset="images/wdd230Large.jpg" media="(min-width: 64rem)">
+                <img src="images/wdd230Small.jpg" alt="test hero image wk6">
+                <!--<img src="images/townrsz.jpg" alt="Picture of town">-->
+            </picture>
+            
             <p class="welcome">Welcome to Marietta</p>
             <p class="actionCall">Join the Chamber</p>
 
@@ -67,11 +73,11 @@
         <div class="weather">
             <h2>Weather</h2>
             <img src="images/weatherhirez.jpg" alt="weather icon">
-            <h3>33 &#x00b0;</h3>
+            <h3><span id="temp">20</span> &#x00b0; F</h3>
             <h3>Partly Cloudy</h3>
             <hr>
-            <p>Wind Speed:   2.5 km/h <br>
-            Wind Chill:     N/A</p>
+            <p>Wind Speed: <span id="windSpeed">5</span> mph <br>
+            Wind Chill: <span id="windChill"></span> &#x00b0 F</p>
         </div>
         <div class="news">
             <h2>News Release</h2>
@@ -111,7 +117,7 @@
     </main>
     <footer>
         <div>
-            <img src="images/cc-logo.png" alt="Chamber Logo">
+            <img src="images/cc-logo.webp" alt="Chamber Logo">
             <p>
                 <strong>Ohio Chamber of Commerce</strong> <br>
                 100 Front St #200, Marietta, OH 45750<br>
@@ -132,6 +138,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
