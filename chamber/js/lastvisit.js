@@ -43,7 +43,7 @@ var difMin = difSec / 60
 console.log(difMin)
 
 var difHrs = difMin / 60
-var difDays = Math.round(difHrs / 24)
+var difDays = Math.floor(difHrs / 24)
 console.log(difHrs)
 console.log(difDays, "days")
 
