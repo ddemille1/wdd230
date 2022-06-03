@@ -35,8 +35,7 @@ console.log(lastTimeStamp)
 var diffMiliSec = numTodayDisplay - lastTimeStamp
 console.log(diffMiliSec)
 
-//convert to seconds
-
+//convert to seconds, min, hrs, days and round
 var difSec = diffMiliSec / 1000
 console.log(difSec, "seconds")
 
