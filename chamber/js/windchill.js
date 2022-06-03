@@ -20,7 +20,7 @@ if (temp <= 50 && windSpeed >= 3) {f = roundToTwo(calcWindChill(temp, windSpeed)
 else {f = "N/A"}
 console.log(f)
 
-/*function to accurately round a number*/
+/*function to accurately round a number to two decimals*/
 function roundToTwo(num) {
     return +(Math.round(num + "e+2")  + "e-2");
 }
