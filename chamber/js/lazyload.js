@@ -1,5 +1,5 @@
 if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll("img.lazyLoad");
+    const images = document.querySelectorAll(".lazyLoad");
     images.forEach(img => {
         img.src = img.dataset.src;
     });
