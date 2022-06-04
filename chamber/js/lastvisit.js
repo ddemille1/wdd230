@@ -47,4 +47,7 @@ var difDays = Math.floor(difHrs / 24)
 console.log(difHrs)
 console.log(difDays, "days")
 
+//display difDays onto webpage
+document.querySelector('.differenceDays').textContent = difDays
+
 
