@@ -225,3 +225,28 @@ footer div:nth-child(2) {
 .dev {
     display: none;
 }
+
+
+
+.aquaticCenter, .mtnBiking, .riverTrail, .sternwheeler, .history {
+    display: inline-block;
+    margin: 5px;
+    height: auto;
+} 
+
+.aquaticCenter img, .mtnBiking img, .riverTrail img, .sternwheeler img, .history img {
+    width: 100%
+}
+
+.preFooter {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+/*.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+.mtnBiking, .riverTrail, .sternwheeler, .history
+
+}*/

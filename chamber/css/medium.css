@@ -92,5 +92,11 @@
     footer div:nth-child(1) p {
         margin: auto
     }
-
+/*for discovery page*/
+.aquaticCenter:hover, .mtnBiking:hover, .riverTrail:hover, .sternwheeler:hover, .history:hover{
+    box-shadow: 10px 10px 5px darkgray;
+} 
+    .discover {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
 }
