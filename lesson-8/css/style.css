@@ -1,0 +1,43 @@
+body {
+    max-width: 700px;
+    
+}
+table {
+    
+    width: 100%;
+    box-shadow: 10px 10px 10px black;
+    font-family: Ubunto, sans-serif;
+    text-align: center;
+    }
+
+table, tr, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+thead tr:nth-child(1) {
+    background-color: powderblue;
+    font-size: 25px;
+}
+thead tr:nth-child(2){
+    background-color: royalblue;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+
+}
+
+tfoot tr {
+    background-color: powderblue;
+    font-size: 14px;
+}
+
+body > table > tbody > tr:nth-child(4) > td:nth-child(3) {
+    background-color: royalblue;
+    color: white;
+}
