@@ -1,10 +1,8 @@
-body {
-    max-width: 700px;
-    
-}
+  
+
 table {
+    margin: 10px auto;
     
-    width: 100%;
     box-shadow: 10px 10px 10px black;
     font-family: Ubunto, sans-serif;
     text-align: center;
