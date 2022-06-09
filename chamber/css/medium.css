@@ -99,4 +99,14 @@
     .discover {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+/*for join page*/
+.joinPage {
+    display: block;
+    width: 540px;
+    margin: 0 auto;
+}
+
+
+
 }

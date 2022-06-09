@@ -243,10 +243,63 @@ footer div:nth-child(2) {
     text-align: center;
     padding: 10px;
 }
-/*.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+ /* form */
 
-.mtnBiking, .riverTrail, .sternwheeler, .history
+ 
+ form fieldset {
+     margin: 2rem 0;
+     border: 1px;
+     background-color: lightgrey;
+     padding: 20px;
+}
 
-}*/
+form fieldset legend {
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+form label.top {
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+}
+form label.top input,  form label.textArea #busDesc{
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    max-width: 30rem;
+    
+}
+
+form .submitBtn {
+    display: block;
+    margin: auto;
+    margin-bottom: 90px;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+form label.sbs {
+    display: block;
+    padding-top: 1rem;
+}
+ form label.top input:required {
+     border-left: red solid 5px;
+ }
+
+ form label.top input:required:valid {
+     border-left: green solid 5px;
+ }
+
+ 
+/*thank you page*/
+
+.thankYou h2{
+    text-align: center;
+}

@@ -119,5 +119,55 @@ main {display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: none;
 }
+
+/*for join page*/
+.joinPage{
+    grid-template-rows: none;
+    width: 900px;
 }
+
+
+
+body > main > form > fieldset.memLvl > label:nth-child(2),
+body > main > form > fieldset.memLvl > label:nth-child(3),
+body > main > form > fieldset.memLvl > label:nth-child(4),
+body > main > form > fieldset.memLvl > label:nth-child(5){
+    display: flex;
+    align-content: flex-start;
+    width: 860px;
+}
+
+.sbs p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0;
+    margin-inline-start: 50px;
+    margin-inline-end: 0px;
+    width: 650px;
+}
+
+
+.sbs input {
+    align-self: flex-start;
+    width: 50px;
+}
+
+
+label.sbs {
+    text-indent: 10px;
+}
+
+.sbs p {
+    align-self: flex-end;
+}
+body > main > form > fieldset.memLvl > label:nth-child(2) > p{
+    padding-left: 25px;}
+body > main > form > fieldset.memLvl > label:nth-child(4) > p {
+    padding-left: 10px;
+}
+body > main > form > fieldset.memLvl > label:nth-child(5) > p {
+    padding-left: 10px;
+}
+}
+
 
