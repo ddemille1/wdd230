@@ -303,3 +303,29 @@ form label.sbs {
 .thankYou h2{
     text-align: center;
 }
+
+/*for directory*/
+div.cards {
+    height:100%;
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    padding: 20px;
+    background-color: white;
+}
+
+div.cards section {
+    
+    background-color: lightgray;
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+
+.cards h2, .cards p {
+    text-align: center;
+}
+
+.cards img {
+    display: block;
+    margin:0 auto;
+    padding-bottom: 20px;
+}

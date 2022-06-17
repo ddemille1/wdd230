@@ -107,6 +107,9 @@
     margin: 0 auto;
 }
 
-
+/*for directory*/
+#directory {
+    display: block;
+}
 
 }

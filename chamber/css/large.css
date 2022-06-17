@@ -168,6 +168,12 @@ body > main > form > fieldset.memLvl > label:nth-child(4) > p {
 body > main > form > fieldset.memLvl > label:nth-child(5) > p {
     padding-left: 10px;
 }
+
+/* for directory page*/
+
+div.cards section {
+    margin: 5px;
+}
 }
 
 

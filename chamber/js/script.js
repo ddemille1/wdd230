@@ -11,7 +11,9 @@ document.querySelector('#visitTime').value = fulldate;
 /* code for getting copywright date*/
 let c = new Date()
 let year = c.getFullYear()
-document.getElementById("copyright").textContent = year
+console.log(year);
+document.getElementById("copyright").textContent = `${year}`
+
 
 /*code for getting last modified*/
 let d = new Date(document.lastModified)
