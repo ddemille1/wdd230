@@ -229,6 +229,12 @@ footer div:nth-child(2) {
     box-shadow: 5px 5px 5px darkgray;
 }
 
+body > footer > div:nth-child(2) > a {
+    color: white;
+}
+body > footer > div:nth-child(2) > a:visited{
+    color: lightgray;
+}
 /*specific for discovery page*/
 
 .dev {
