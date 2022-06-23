@@ -162,6 +162,15 @@ main div {
 .join {
     display: none;
 }
+#weatherIcon {
+    width: 150px;
+}
+body > main > div.weather > h3:nth-child(3) {
+    margin-top: 0px;
+}
+
+body > main > div.weather > h2
+{margin-bottom: 0px;}
 
 .event, .weather, .news, .spotlight {
     text-align: center;
