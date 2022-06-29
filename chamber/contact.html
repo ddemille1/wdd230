@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marietta Ohio Chamber of Commerce</title>
-    <meta name="description" content="Discover page for Marietta Ohio Chamber of Commerce">
+    <meta name="description" content="Homepage for Marietta Ohio Chamber of Commerce">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
@@ -14,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,10 +24,23 @@
         <div class="headerWrapper">
             <img class="headerLogo" src="images/cc-logo.webp" alt="Chamber Logo">
             <h1>Marietta Ohio<br>
-                Chamber of Commerce</h1>
-
-            <nav id="largeView">
-                <ul>
+            Chamber of Commerce</h1>
+                
+                <nav id="largeView">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            <a class="social" href="https://www.facebook.com"><img  src="images/blueFacebook.png" alt="Facebook icon"></a>
+            <a  class="social" href="https://www.linkedin.com"><img src="images/blueLinkedin.png" alt="LinkedIn icon"></a>
+            <button class="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+            <nav class="smallView">
+                <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
@@ -33,31 +48,12 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a class="social" href="https://www.facebook.com"><img src="images/blueFacebook.png"
-                    alt="Facebook icon"></a>
-            <a class="social" href="https://www.linkedin.com"><img src="images/blueLinkedin.png"
-                    alt="LinkedIn icon"></a>
-            <button class="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-        </div>
-        <nav class="smallView">
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+        
         <div id="date"></div>
 
     </header>
-    <main class="thankYou">
-        
-        <h2>Thank you for joining the chamber! <br> We'll send your bill soon</h2>
-
-
-        
+    <main>
+        <input type="hidden" id="visitTime" name="visitTime" value="">
     </main>
     <footer>
         <div>
@@ -77,13 +73,12 @@
         </div>
         <div>
             &copy; <span id="copyright"></span> | Marietta Ohio Chamber of Commerce | Douglas K. DeMille | WDD 230
-            Project | <span id="lastmodified"></span>
+            Project | <span id="lastmodified"></span><br>Weather date from <a href="https://www.openweathermap.org">OpenWeatherMap.org</a>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/lastvisit.js"></script>
-    <script src="js/lazyload.js"></script>
+    
 </body>
 
 </html>
