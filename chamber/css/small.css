@@ -233,6 +233,9 @@ footer div:nth-child(2) {
     height: 280px;
     box-shadow: 5px 5px 5px darkgray;
 }
+.spotlight1 img, .spotlight2 img, .spotlight3 img{
+    max-width: 150px;
+}
 
 body > footer > div:nth-child(2) > a {
     color: white;
