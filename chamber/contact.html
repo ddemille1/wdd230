@@ -52,8 +52,48 @@
         <div id="date"></div>
 
     </header>
-    <main>
+    <main class="contactMain">
+        <div class="contactUs">
+            <h2>Contact us!</h2>
+            <h3>Address</h3>
+            <p>Marietta Chamber of Commerce<br>
+            300 Putnum street<br>
+            Marietta OH 45750</p>
+            <h3>Phone</h3>
+            <p>123-456-7890</p>
+            <h3>Email</h3>
+            <p>chamber@marietta.gov</p>
+        </div> 
+        <div class="pointsOfContact">
+            <h2>Points of Contact</h2>
+            <p>Joe Schmoe<br>
+            President and CEO<br>
+        (234) 567-8901</p>
+            <p>Yo mamma<br>
+            Operations Manager<br>
+        (345) 678-9012</p>
+                <p>Big Daddy<br>
+                Grant Project Manager<br>
+            (456) 789-0123</p>
+        </div>
+
+        <div class="contactForm">
+        <form method="get" action="thankyou.html">
+        <fieldset>
+            <h2>Contact Form</h2> 
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>    
+        <label class="top">email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>  
+        <label class="textArea">Question*
+            <textarea id="busDesc" name="busDesc" rows="4" cols="50" maxlength="200" placeholder="Type question here."></textarea>
+            </label>
+      
+        </fieldset>
+
         <input type="hidden" id="visitTime" name="visitTime" value="">
+        <input type="submit" value="Get Answers" class="submitBtn">
+        </form>
+    </div>
     </main>
     <footer>
         <div>

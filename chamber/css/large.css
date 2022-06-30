@@ -174,8 +174,28 @@ body > main > form > fieldset.memLvl > label:nth-child(5) > p {
 div.cards section {
     margin: 5px;
 }
+/* for contact page*/
+.contactMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 1fr;
+}
+.pointsOfContact {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 75%;
+}
 
+.contactUs {
+    width: 75%;
+}
 
+.contactForm {
+    width: 75%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 95%;
+}
 }
 
 
