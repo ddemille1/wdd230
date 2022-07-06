@@ -61,12 +61,16 @@
     }
 
     .join h2 {
-        background-color: midnightblue;
+        background-color: red;
         color: white;
         font-weight: bold;
         font-size: 30px;
         padding: 10px;
         border-radius: 10px;
+    }
+    .join a {
+        text-decoration: none;
+        color: white;
     }
 
     .event {
@@ -111,5 +115,8 @@
 #directory {
     display: block;
 }
-
+/* for contact page*/
+.contactMain {
+    display: block;
+}
 }

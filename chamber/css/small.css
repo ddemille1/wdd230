@@ -146,7 +146,7 @@ main div {
     text-shadow: 5px 5px 5px gray
 }
 .actionCall {
-    background-color: midnightblue;
+    background-color: red;
     color: white;
     position: absolute;
     bottom: 20px;
@@ -157,6 +157,11 @@ main div {
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
+}
+
+.actionCall a {
+    text-decoration: none;
+    color: white;
 }
 
 .join {
@@ -227,6 +232,9 @@ footer div:nth-child(2) {
     padding: 0;
     height: 280px;
     box-shadow: 5px 5px 5px darkgray;
+}
+.spotlight1 img, .spotlight2 img, .spotlight3 img{
+    max-width: 150px;
 }
 
 body > footer > div:nth-child(2) > a {
@@ -386,4 +394,14 @@ div.cards section {
 
 .list section img {
     display: none;
+}
+
+/* for contact page*/
+
+.contactForm {
+    height: 100%;
+}
+
+.contactUs, .pointsOfContact {
+    text-align: center;
 }
