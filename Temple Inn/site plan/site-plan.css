@@ -105,7 +105,19 @@ nav a:hover {
   color: white;
   background-color: var(--secondary-color);
 }
+body > main > nav > ul > li.hover > a {
+  color: white;
+}
+.hover a{
+  color: white;
+  background-color: var(--secondary-color);
+}
 
 .wayfind a {
   background-color: var(--accent2-color);
+}
+
+footer {
+  color: white;
+  text-align: center;
 }
