@@ -1,0 +1,55 @@
+{
+    "temples":[
+        {
+            "name": "Provo City Center",
+            "address": "50 South University Ave, Provo UT 84601, United States",
+            "phone": "(1) 801-343-2700",
+            "email": "see website",
+            "services": ["Clothing rental available", 
+                "No cafeteria available",
+                 "No patron housing available",
+                  "Distribution center nearby"],
+            "history": "Dedicated: 20 March 2016",
+            "ordSched": "contact temple",
+            "sesSched": "contact temple",
+            "closSched": 
+                ["Saturday, 1 October 2022", 
+                    "Wednesday, 23 November 2022 (Limited Operations)",
+                    "Thursday, 24 November 2022",
+                    "Monday, 28 November 2022 - Monday, 12 December 2022",
+                    "Saturday, 24 December 2022",
+                    "Saturday, 31 December 2022"
+                ]       
+            },
+        {
+            "address": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordSched": "",
+            "sesSched": "",
+            "closSched": ""
+        },
+        {
+            "address": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordSched": "",
+            "sesSched": "",
+            "closSched": ""
+        },
+        {
+            "address": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordSched": "",
+            "sesSched": "",
+            "closSched": ""
+        }
+    ]
+}

@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Tangerine&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
   --primary-color: #16324f;
   --secondary-color: #5c1a1b;
   --accent1-color: #c6b36a;
-  --accent2-color: #b3a25f;
+  --accent2-color: #7a6b2c;
   --heading-font: IM Fell Great Primer, serif;
   --heading2-font: Ariel, Helvetica, sans-serif;
-  --paragraph-font: Tangerine, cursive;
+  --paragraph-font: 'Open Sans', sans-serif;
 }
 
 body {
@@ -49,7 +52,7 @@ p {
   font-family: var(--paragraph-font);
   color: white;
   padding: 1em;
-  font-size: 30px;
+  font-size: 20px;
   background-color: var(--secondary-color);
 }
 .colors {
@@ -66,8 +69,11 @@ p {
   height: 3em;
   color: white;
 }
-.colors td:nth-child(3), .colors td:nth-child(4){
+.colors td:nth-child(3){
   color: black;
+}
+.colors td:nth-child(4) {
+  color: white;
 }
 .primary {
   background-color: var(--primary-color);
@@ -78,9 +84,10 @@ p {
 .accent1 {
   background-color: var(--accent1-color);
 }
-.currentNav {
+td.currentNav {
   background-color: var(--accent2-color);
 }
+
 nav {
   background-color: var(--accent1-color) ;
   line-height: 3em;
@@ -115,8 +122,11 @@ body > main > nav > ul > li.hover > a {
 
 .wayfind a {
   background-color: var(--accent2-color);
+  
 }
-
+body > main > nav > ul > li.wayfind > a{
+  color: white;
+}
 footer {
   color: white;
   text-align: center;
