@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites | Reservations</title>
+    <meta
+      name="description"
+      content="This website is to promote and provide information about Temple Inn & Suites."
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <main class="reservations">
+        <form action="/my-handling-form-page" method="post">
+          <ul class="res-ul">
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" required />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" required />
+            </li>
+            <li>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </li>
+            <li>
+              <label for="number_beds">Number of beds:</label>
+              <input type="number" id="number_beds" name="user_number_beds" required />
+            </li>
+            <li>
+              <label for="arrival">Arrival date:</label>
+              <input type="date" id="arrival" name="arrival" required/>
+            </li>
+            <li>
+              <label for="number_nights">Number of nights:</label>
+              <input type="number" id="number_nights" name="user_number_nights" required/>
+            </li>
+            <li>
+              <label for="msg">Special instructions:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Submit your reservation</button>
+            </li>
+          </ul>
+        </form>
+      </main>
+    
+</body>
+</html>

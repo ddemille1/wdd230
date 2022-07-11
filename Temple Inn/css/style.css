@@ -1,8 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Tangerine&display=swap");
 
-@media screen and (max-width: 550px) {
-    .______ {
-      display: block;}}
+
+/* for hamburger button*/
+button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: black;
+
+}
+
+.hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+.pressed span:nth-child(1) {
+    display:none;
+}
+.pressed span:nth-child(2) {
+    display:flex;
+}
+
+#largeView {display: none;}
+.smallView ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px
+}
+
+.smallView ul li a{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    background-color: #c6b36a;
+    color: black;
+    border: 1px solid black;
+}
+
+.smallView ul li a:hover {
+    /*background-color: rgb(255, 255, 255, .9);*/
+    /*background-color: rgb(0,0,0, .1);*/
+    background-color: #5c1a1b;
+    color: white;
+}
+.navigation {
+    display: none;
+}
+
+.responsive{
+    display:block;}
+
+/*end hamburger button*/
+
+
 
 body {background-color: #16324f;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,18 +65,19 @@ body {background-color: #16324f;
     }
 
 header {color: black;
-        background-color: #8f7e4f;
+        background-color: #c6b36a;
         max-width: 960px;
         margin: 0 auto;
         padding: 5px 0;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         }
 
 picture {display: flex;
     align-items: center;
-    padding-right: 1rem;}
+    padding-right: 1rem;
+    padding-left: 1rem;}
 
 section {display: flex;
     align-items: center;}
@@ -36,7 +92,7 @@ ul {display: flex;
     font-family: Arial, Helvetica, sans-serif;}
 
 li {display: flex; 
-    padding-left: 2rem; 
+    padding: 0 1rem 0; 
     }       
 li a:link {
     color: #242b86fd;
@@ -51,79 +107,30 @@ li a:active {
     color: #0000FF;}
     
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    font-size: 2rem;
-    display: grid;
-    grid-template-columns: 455px 455px;
-    grid-gap: 50px;
+    display: block;
     }
 
-.banner-box {
-    display: grid;
-    grid-template-columns: 480px 480px;
-}
-.banner-box img {
-    grid-column: 1/-1;
-    grid-row: 1;
-    align-self: center;
-}
 
-.action{
-    grid-column: 1/-1;
-    grid-row: 1;
-    background-color:  rgba(240, 240, 240, 0.6);
-    margin: 20px 20px;
-    padding: 10px;
-    text-align: center; 
-}
 h3 {
     font-size: 25px;
     line-height: 15px;
     text-shadow: 1px 1px #FFFFFF;
     font-family: IM Fell Great Primer, cursive, sans-serif;
 }
-.action button {
-    line-height: 2em;
-    width: 10em;
-    background-color: #5c1a1b;
-    color: white;
-}
+
 
 main h2 {color: white;
         text-align: center;
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif}
 
-.section1  {
-    grid-column: 1/2;
-}
-.section1pict {
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-}
+
 .section1pict img, .section2pict img {
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 5px 5px 5px #999;;
 }
 
-.section2 {
-    grid-column: 2/3;
-}
-
-.section2pict {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-
-}
-.section3 {
-    grid-column: 1/3;
-
-}
 main p {background-color:  #5c1a1b;
         color: white;
         font-family: Tangerine, cursive, sans-serif;
@@ -190,3 +197,290 @@ footer a:hover {
 footer a:active {
     color: #0000FF;}
 
+    /*css for reservations page*/
+    .reservations {display: block;}
+    form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 600px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        margin: 15px auto;
+      }
+      
+      .res-ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      form li + li {
+        margin-top: 1em;
+      }
+      
+      label {
+        /* Uniform size & alignment */
+        display: inline-block;
+        width: 120px;
+        padding-right: 10px;
+        text-align: right;
+        font-size: 20px;
+        color: white;
+      }
+      
+      input, 
+      textarea {
+        /* To make sure that all text fields have the same font settings
+           By default, textareas have a monospace font */
+        font: .75em sans-serif;
+      
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+      
+        /* Match form field borders */
+        border: 1px solid #999;
+      }
+      
+      input:focus, 
+      textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+      }
+      
+      textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+      
+        /* Provide space to type some text */
+        height: 5em;
+      }
+      
+      .button {
+        /* Align buttons with the text fields */
+        padding-left: 150px; /* same size as the label elements */
+      }
+      
+      button {
+        /* This extra margin represent roughly the same space as the space
+           between the labels and their text fields */
+        margin-left: 10px;
+      }
+    
+    /*end of reservations css*/
+    
+    /* css for temple spotlight */
+    .temple-spotlight {
+        max-width: 960px;
+        margin: 0 auto;
+        font-size: 2rem;
+        display: block;
+    }
+    .vernal-banner {
+        display: grid;
+        grid-template-rows: 165px 165px 165px;
+        grid-template-columns: 265px 265px 265px;
+        position: relative;
+        left: 75px;
+        top: 20px;
+        margin: 20px 20px 40px 20px;
+    }
+    
+    .vernal-banner h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black
+    }
+    .vernal-banner img {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: -1;
+    }
+    .vernal-banner p {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .main-content {
+    
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        grid-gap: 75px;
+    }
+    
+    .history-section, .features-section, .facts {
+        display: block;
+        justify-self: center;
+    }
+    .features-section img {
+        position: relative;
+        left: 25px; 
+    }
+    .history-section img {
+        position: relative;
+        left: 25px; 
+    }
+    .history-section p {
+        margin-top: 40px;
+    }
+    .facts img {
+        position: relative;
+        left: 30px; 
+    }
+    
+    /*css for ammenities section*/
+    
+    .amenities {
+        max-width: 960px;
+        margin: 0 auto;
+        font-size: 2rem;
+        display: block;
+    }
+    .amenities-banner {
+        text-align: center;
+        position: relative;
+        top: -45px;
+        height: 600px;
+    }
+    .amenities-banner h2 {
+        position: relative;
+        text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black;
+        top: 120px;
+        text-align: left;
+        left: 175px;
+    }.amenities-banner p{
+        width: 250px;
+        position: relative;
+        bottom: 185px;
+        left: 570px;
+        }
+    
+    .amenities-content {
+        position: relative;
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        grid-gap: 75px;
+    }
+    
+    .changing-rooms, .childcare, .kitchenettes, .sitting-area, .reception-hall, .family-history, .free-amenities, .free-amenities ul 
+    {
+        display: block;
+        justify-self: center;}
+    .childcare img {
+        position: relative;
+        left: 25px;
+    }
+    .kitchenettes img {
+        position: relative;
+        left: 25px;
+    }
+    .family-history img {
+        position: relative;
+        left: 25px;
+    }
+    
+    .closing-img {
+        position: relative;
+        -webkit-box-align:center;
+        -webkit-box-pack:center;
+        display:-webkit-box;}
+    
+    .changing-rooms img, .childcare img, .kitchenettes img, .sitting-area img, .reception-hall img, .family-history img{
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 5px 5px 5px #999;}
+    
+    .last-section {
+        position: relative;
+    }
+    .free-amenities {
+        /*position: absolute;
+        top: 70px;
+        left: 100px;*/
+        width: 960px;
+    }
+    .free-amenities p {
+        column-count: 3;
+    }
+    .free-amenities h2 {
+        text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black
+    }
+    
+    .cookies{
+        text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 5px 0;
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*@media screen and (max-width: 550px)
+        { header, ul, .main-index, .banner-box, footer div { display: block; }
+        .banner {display: none;}
+        }
+    */
+
+
+    /*----------for large screens---------------------*/
+
+        @media only screen and (min-width: 64rem) {
+            main {
+                max-width: 960px;
+            margin: 0 auto;
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: 455px 455px;
+            grid-gap: 50px;
+            }
+
+            .banner-box {
+                display: grid;
+                grid-template-columns: 480px 480px;
+            }
+            .banner-box img {
+                grid-column: 1/-1;
+                grid-row: 1;
+                align-self: center;
+            }
+            
+            .action{
+                grid-column: 1/-1;
+                grid-row: 1;
+                background-color:  rgba(240, 240, 240, 0.6);
+                margin: 20px 20px;
+                padding: 10px;
+                text-align: center; 
+            }
+            .action button {
+                line-height: 2em;
+                width: 10em;
+                background-color: #5c1a1b;
+                color: white;
+            }
+            .section1  {
+                grid-column: 1/2;
+            }
+            .section1pict {
+                grid-column: 2/3;
+                justify-self: center;
+                align-self: center;
+            }
+            .section2 {
+                grid-column: 2/3;
+             }
+             
+             .section2pict {
+                 grid-column: 1/2;
+                 grid-row: 3/4;
+                 justify-self: center;
+                 align-self: center;
+             
+             }
+             .section3 {
+                 grid-column: 1/3;
+             
+             }
+        }
