@@ -22,7 +22,7 @@
     </section>
     <nav class="smallView">
       <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="temple.html">Temple</a></li>
         <li><a href="reservation.html">Reservation</a></li>
         <li><a href="services.html">Services</a></li>
@@ -83,6 +83,17 @@
         aliquid et explicabo!
       </p>
     </div>
+    <div class="weather">
+        <h2>Weather</h2>
+        <div class="iconContainer">
+        <img id="weatherIcon" src="images/weatherhirez.jpg" alt="weather icon">
+    </div>
+        <h3><span id="temp"></span> &#x00b0; F</h3>
+        <h3 id="condition">Partly Cloudy</h3>
+        <hr>
+        <p>Wind Speed: <span id="windSpeed"></span> mph <br>
+        Wind Chill: <span id="windChill"></span> &#x00b0 F</p>
+    </div>
   </main>
   <footer>
     <div>
@@ -121,5 +132,6 @@
     | Douglas DeMille
   </footer>
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>

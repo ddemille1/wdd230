@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Tangerine&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 /* for hamburger button*/
 button {
     margin: .2rem 2vw;
     background: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
 
 }
@@ -21,6 +21,9 @@ button {
     display:flex;
 }
 
+body > header > section > button {
+    margin-left: auto;
+}
 #largeView {display: none;}
 .smallView ul {
     list-style-type: none;
@@ -40,6 +43,12 @@ button {
     background-color: #c6b36a;
     color: black;
     border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+body > header > nav.smallView > ul > li:nth-child(1) > a{
+    background-color: #7a6b2c;
+    color: white;
 }
 
 .smallView ul li a:hover {
@@ -83,10 +92,17 @@ section {display: flex;
     align-items: center;}
 
 h1 {display: flex;
+    font-size: 2rem;
     align-items: center; 
-    padding-right: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     font-family: IM Fell Great Primer, cursive, sans-serif;
     }
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black;
+    padding-top: 40px;
+}
 
 ul {display: flex;
     font-family: Arial, Helvetica, sans-serif;}
@@ -94,7 +110,7 @@ ul {display: flex;
 li {display: flex; 
     padding: 0 1rem 0; 
     }       
-li a:link {
+/*li a:link {
     color: #242b86fd;
 }
 li a:visited {
@@ -105,14 +121,32 @@ li a:hover {
 }
 li a:active {
     color: #0000FF;}
-    
+    */
 main {
     display: block;
     }
 
+    .banner {
+        display: none;
+    }
+    .action button {
+    line-height: 2em;
+    width: 10em;
+        background-color: #5c1a1b;
+        color: white;
+    }
+
+    .action{
+        /*grid-column: 1/-1;
+        grid-row: 1;*/
+        background-color:  rgba(240, 240, 240, 0.6);
+        margin: 20px 20px;
+        padding: 10px;
+        text-align: center; 
+    }
 
 h3 {
-    font-size: 25px;
+    font-size: 35px;
     line-height: 15px;
     text-shadow: 1px 1px #FFFFFF;
     font-family: IM Fell Great Primer, cursive, sans-serif;
@@ -124,20 +158,47 @@ main h2 {color: white;
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif}
 
-
+        body > main > div.section1pict, body > main > div.section2pict {
+    display: flex;
+    justify-content: center;
+}
 .section1pict img, .section2pict img {
     border: 1px solid #ccc;
     padding: 10px;
-    box-shadow: 5px 5px 5px #999;;
+    box-shadow: 5px 5px 5px #999;
+    
 }
 
 main p {background-color:  #5c1a1b;
         color: white;
-        font-family: Tangerine, cursive, sans-serif;
-        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
         padding: 10px 30px;
         text-align: left;}
-     
+/* for weather */     
+.weather {
+    background-color: #5c1a1b;
+    text-align: center;
+    margin-bottom: 20px;
+}        
+body > main > div.weather > div{
+    display: flex;
+    justify-content: center;
+}
+#weatherIcon {
+    width: 100px;
+    
+}
+
+body > main > div.weather > h3:nth-child(3), body > main > div.weather > h3:nth-child(4) {
+    color: white;
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.weather p {
+    text-align: center;
+}
+
 footer {background-color: #8f7e4f;
     max-width: 960px;
     margin: 0 auto;
@@ -454,12 +515,7 @@ footer a:active {
                 padding: 10px;
                 text-align: center; 
             }
-            .action button {
-                line-height: 2em;
-                width: 10em;
-                background-color: #5c1a1b;
-                color: white;
-            }
+            
             .section1  {
                 grid-column: 1/2;
             }
