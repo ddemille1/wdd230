@@ -1,11 +1,14 @@
 /*This is to use the weather API */
 const tempIn = document.querySelector("#temp");
+const humidity = document.querySelector("#humidity");
 
 const condition  = document.querySelector("#condition");
 const weatherIcon = document.querySelector("#weatherIcon");
 const windSpeedIn = document.querySelector("#windSpeed");
 
 const url = "https://api.openweathermap.org/data/2.5/weather?id=4517586&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
+
+const url2 = ""
 
 async function apiFetch() {
     try {
@@ -26,6 +29,7 @@ apiFetch();
 
 function displayResults(weatherData) {
     tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
     //tempIn.innerHTML = `5`
     windSpeedIn.innerHTML = `${weatherData.wind.speed}`;
     //windSpeedIn.innerHTML = `20`

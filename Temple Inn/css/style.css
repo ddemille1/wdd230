@@ -82,7 +82,15 @@ header {color: black;
         justify-content: center;
         align-items: center;
         }
+    
 
+.phoneInHeader {
+    text-align: center;
+}
+.socialHeader {
+    display: flex;
+    justify-content: center;
+}
 picture {display: flex;
     align-items: center;
     padding-right: 1rem;
@@ -145,6 +153,11 @@ main {
         text-align: center; 
     }
 
+    body > main > div.banner-box > div > h3{
+        margin: 10px;
+        padding: 20px;
+        line-height: 45px;
+    }
 h3 {
     font-size: 35px;
     line-height: 15px;
@@ -228,10 +241,15 @@ footer div {
 .map, .phone, .mail {
     padding-right: 10px;
 }
+.icons {
+    display: none;
+}
 .social {
-    margin-left: auto;
+    /*margin-left: auto;
     align-self: flex-start;
-    padding-top: 16px;
+    padding-top: 16px;*/
+    justify-content: center;
+    padding-bottom: 20px;
 }
 .social-icon {
     width: 50px;
@@ -240,12 +258,23 @@ footer div {
 footer p {
     font-size: 1rem;
     font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
        }
 
 .contact {
-    display: flex;
-    flex-direction: column;
+    margin: 10px auto;
     }
+body > footer > div:nth-child(2)
+    {justify-content: center;}
+    body > footer > div:nth-child(1) {
+        justify-content: center;
+    }
+    
+    .map {
+    width: 50px;
+    padding: 5px;
+
+}
 footer a:link {
     color: #242b86fd;
 }
@@ -257,6 +286,10 @@ footer a:hover {
 }
 footer a:active {
     color: #0000FF;}
+.lastLine {
+    display: block;
+    text-align: center;
+}
 
     /*css for reservations page*/
     .reservations {display: block;}
@@ -515,6 +548,7 @@ footer a:active {
                 padding: 10px;
                 text-align: center; 
             }
+
             
             .section1  {
                 grid-column: 1/2;
