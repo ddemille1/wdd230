@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
   <meta name="description" content="This website is to promote and provide information about Temple Inn & Suites." />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
 </head>
 
 <body>
+    <div class="weatherAlert">
+        <p>Weather alert goes here</p>
+        <button class="alertBtn"><span>&#9776;</span><span>X</span></button>
+    </div>
   <header>
     <section class="heading">
       <picture>
@@ -17,10 +24,30 @@
       </picture>
 
       <h1>Temple Inn & Suites</h1>
+
+      <nav id="largeView">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="temple.html">Temple</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+
+      <div class="socialHeaderLrg">
+        <a target="_blank" href="http://facebook.com">
+          <img src="images/facebook1.png" alt="facebook logo" class="social-icon" />
+        </a>
+    
+        <a target="_blank" href="http://instagram.com">
+          <img src="images/instagram1.png" alt="instagram logo" class="social-icon" />
+        </a>
+      </div>
       <button class="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
 
     </section>
     <p class="phoneInHeader">Phone: 215-829-9999</p>
+    
     <div class="socialHeader">
     <a target="_blank" href="http://facebook.com">
       <img src="images/facebook1.png" alt="facebook logo" class="social-icon" />
@@ -30,6 +57,8 @@
       <img src="images/instagram1.png" alt="instagram logo" class="social-icon" />
     </a>
   </div>
+
+
     <nav class="smallView">
       <ul class="navigation">
         <li><a class="active" href="index.html">Home</a></li>
@@ -38,14 +67,7 @@
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
-    <nav id="largeView">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="temple.html">Temple</a></li>
-        <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-    </nav>
+    
 
 
   </header>
@@ -60,14 +82,14 @@
         <button>Contact Us</button>
       </div>    
     </div>
-    <div class="section1">
+    <!--<div class="section1">
       <h2>Your Home Away from Home</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dolor
         aut quos ad, soluta vel voluptate quaerat facilis sit cum itaque, nisi
         autem debitis, nobis amet. Excepturi earum voluptas odio.
       </p>
-    </div>
+    </div>-->
 
     <div class="section1pict">
       <img src="images/az-tmpl-320.jpg" alt="Gilbert AZ Temple" />
@@ -80,7 +102,7 @@
         ut corporis ex fuga nesciunt consequuntur, quis dolorem ipsa
         necessitatibus ipsum?
       </p>
-    </div>
+    <!--</div>
     <div class="section2pict">
       <img src="images/dc-temple-320-uncropped.jpg" alt="Washington DC Temple" />
     </div>
@@ -92,7 +114,7 @@
         excepturi doloremque? Ipsam omnis voluptates quisquam iure dignissimos
         aliquid et explicabo!
       </p>
-    </div>
+    </div> -->
     <div class="weather">
         <h2>Weather</h2>
         <div class="iconContainer">
@@ -152,6 +174,49 @@
     | Douglas DeMille
   </div>
   </footer>
+  
+  <footer class="footerLrg">
+    <div id="footerFlx">
+        
+        <div class="footerAddress">
+            <p>
+            Temple Inn & Suites Headquarters <br />
+            4800 Montgomery Ln #300<br />
+            Bethesda, MD 20814</p> 
+            
+            
+            <a target="_blank" href="https://goo.gl/maps/yLNDv5z4jTxyWce49">
+            <img class="map" src="images/maps-icon.png" alt="google maps icon" />
+            </a>
+        </div>
+        
+        <div>
+        <p>
+        215-829-9999<br />
+        info@templinn.com<br />
+        </p>
+        </div>  
+        
+        <div class="social">
+        <a target="_blank" href="http://facebook.com">
+          <img src="images/facebook1.png" alt="facebook logo" class="social-icon" />
+        </a>
+
+        <a target="_blank" href="http://instagram.com">
+          <img src="images/instagram1.png" alt="instagram logo" class="social-icon" />
+        </a>
+
+        <a target="_blank" href="http://snapchat.com">
+          <img src="images/snapchat2.png" alt="snapchat logo" class="social-icon" />
+        </a>
+        </div>
+    </div>
+    <div class="lastLine">
+    &copy;2022 | Temple Inn & Suites | All Rights Reserved |
+    <a href="attribution.html">Attributions</a>
+    | Douglas DeMille
+    </div>
+</footer>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/windchill.js"></script>
 </body>
