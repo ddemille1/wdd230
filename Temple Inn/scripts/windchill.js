@@ -6,7 +6,9 @@ const condition  = document.querySelector("#condition");
 const weatherIcon = document.querySelector("#weatherIcon");
 const windSpeedIn = document.querySelector("#windSpeed");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?id=4517586&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
+//const url = "https://api.openweathermap.org/data/2.5/weather?id=4517586&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
+
+const url = "https://api.openweathermap.org/data/2.5/onecall?lat=39.415352&lon=-81.454842&exclude=hourly,minutely&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
 
 const url2 = ""
 
@@ -28,10 +30,12 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-    tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
+    tempIn.innerHTML = `<strong>${weatherData.current.temp.toFixed(0)}</strong>`;
+    //tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;*//
+    humidity.innerHTML = `${weatherData.current.humidity.toFixed(0)}`;
     //tempIn.innerHTML = `5`
-    windSpeedIn.innerHTML = `${weatherData.wind.speed}`;
+    windSpeedIn.innerHTML = `${weatherData.current.wind_speed}`;
+    console.log(windSpeedIn.innerHTML)
     //windSpeedIn.innerHTML = `20`
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
