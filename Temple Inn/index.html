@@ -14,8 +14,8 @@
 
 <body>
     <div class="weatherAlert">
-        <p>Weather alert goes here</p>
-        <button class="alertBtn"><span>&#9776;</span><span>X</span></button>
+        <span id="alertInfo">W</span>
+        <button class="alertBtn"><span>X</span></button>
     </div>
   <header>
     <section class="heading">
@@ -122,10 +122,15 @@
     </div>
         <h3><span id="temp"></span> &#x00b0; F</h3>
         <h3 id="condition">Partly Cloudy</h3>
-        <hr>
         <p>Humidity: <span id="humidity"></span>%<br>
           Wind Speed: <span id="windSpeed"></span> mph <br>
         Wind Chill: <span id="windChill"></span> &#x00b0 F</p>
+        <hr>
+        <h2>Forecast</h2>
+        <p>Tommorow: <span id="day1temp"></span>&#x00b0; F</br>
+            Next Day: <span id="day2temp"></span>&#x00b0; F</br>
+            Day after that: <span id="day3temp"></span>&#x00b0; F</br></p>
+    
     </div>
   </main>
   <footer>

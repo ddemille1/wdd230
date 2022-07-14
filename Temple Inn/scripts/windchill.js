@@ -1,4 +1,5 @@
 /*This is to use the weather API */
+const alertInfo = document.querySelector("#alertInfo");
 const tempIn = document.querySelector("#temp");
 const humidity = document.querySelector("#humidity");
 
@@ -6,11 +7,13 @@ const condition  = document.querySelector("#condition");
 const weatherIcon = document.querySelector("#weatherIcon");
 const windSpeedIn = document.querySelector("#windSpeed");
 
+const day1temp = document.querySelector("#day1temp")
+const day2temp = document.querySelector("#day2temp")
+const day3temp = document.querySelector("#day3temp")
+
 //const url = "https://api.openweathermap.org/data/2.5/weather?id=4517586&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
 
 const url = "https://api.openweathermap.org/data/2.5/onecall?lat=39.415352&lon=-81.454842&exclude=hourly,minutely&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
-
-const url2 = ""
 
 async function apiFetch() {
     try {
@@ -30,15 +33,25 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
+    //if weather.alerts.events not equal null then set inner html to the variable
+    //and display the thing
+    //else don't change the inner html and don't display the div.
+    
+    //alertInfo.innerHTML = `${weatherData.current.temp}`
+    //alertInfo.innerHTML = `cat`
+    //alertInfo.innerHTML = `${weatherData.alerts.event}, ${weatherData.alerts.description}`;
     tempIn.innerHTML = `<strong>${weatherData.current.temp.toFixed(0)}</strong>`;
+    day1temp.innerHTML = `${weatherData.daily[1].temp.day.toFixed(0)}`
+    day2temp.innerHTML = `${weatherData.daily[2].temp.day.toFixed(0)}`
+    day3temp.innerHTML = `${weatherData.daily[3].temp.day.toFixed(0)}`
     //tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;*//
     humidity.innerHTML = `${weatherData.current.humidity.toFixed(0)}`;
     //tempIn.innerHTML = `5`
     windSpeedIn.innerHTML = `${weatherData.current.wind_speed}`;
-    console.log(windSpeedIn.innerHTML)
+    
     //windSpeedIn.innerHTML = `20`
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.current.weather[0].icon}.png`;
+    const desc = weatherData.current.weather[0].description;
     
     //to capatilize each word in the description:
     const words = desc.split(" ");
@@ -86,3 +99,9 @@ function roundToTwo(num) {
 /*place the wind chill number or NA on the page as needed.*/
 document.querySelector('#windChill').textContent = f
 }
+
+/*This is to turn off the weather alert*/
+const alertBtn = document.querySelector('.alertBtn');
+const weatherAlert = document.querySelector('.weatherAlert');
+
+alertBtn.addEventListener('click', () => {weatherAlert.classList.toggle('closed')}, false);

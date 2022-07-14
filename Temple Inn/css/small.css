@@ -12,7 +12,10 @@
 .weatherAlert button {
     color: white;
 }
-
+/*to hide the alert. Button being pressed changes class of 'weatherAlert' class of 'closed'*/
+.closed {
+    display: none;
+}
 .socialHeaderLrg {
     display: none;
 }
