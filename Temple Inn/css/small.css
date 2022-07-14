@@ -75,6 +75,10 @@ body > header > nav.smallView > ul > li:nth-child(1) > a{
     background-color: #5c1a1b;
     color: white;
 }
+
+body > header > nav > ul > li:nth-child(1) > a:hover {
+    background-color: #5c1a1b;
+}
 .navigation {
     display: none;
 }
@@ -534,11 +538,81 @@ footer a:active {
         display: block;
         margin-bottom: 20px;
     }
-    /*@media screen and (max-width: 550px)
-        { header, ul, .main-index, .banner-box, footer div { display: block; }
-        .banner {display: none;}
-        }
-    */
-
-
+   
+    /*css for Attributions page-----------------------------------------------------*/
+    .attributions .weatherAlert {
+        display: none;}
     
+    .attributions > header > nav.smallView > ul > li > a{
+        background-color: #c6b36a;
+        color: black;
+    }
+    .attributions > header > nav.smallView > ul > li:nth-child(1) > a{
+        background-color: #c6b36a;
+        color: black;
+    }
+    .attributions > header > nav.smallView > ul > li > a:hover {
+        background-color: #5c1a1b;
+        color: white;
+    }
+
+/*css for temple page-----------------------------------*/
+
+/*for nav wayfinding*/
+.temple .weatherAlert {
+    display: none;}
+
+.temple > header > nav.smallView > ul > li:nth-child(1) > a {
+    background-color: #c6b36a;
+    color: black;
+}
+.temple > header > nav.smallView > ul > li:nth-child(2) > a{
+    background-color: #7a6b2c;
+    color: white;
+}
+
+.temple > header > nav.smallView > ul > li > a:hover {
+    background-color: #5c1a1b;
+    color: white;
+}
+
+/*for temple cards*/
+.temple .cards section {
+    display: block;
+}
+
+/*css for reservations------------------------------------*/
+.reservation > header > nav.smallView > ul > li:nth-child(1) > a {
+    background-color: #c6b36a;
+    color: black;
+}
+
+.reservation > header > nav.smallView > ul > li:nth-child(3) > a{
+    background-color: #7a6b2c;
+    color: white;
+}
+
+.reservation > header > nav.smallView > ul > li > a:hover {
+    background-color: #5c1a1b;
+    color: white;
+}
+.reservation > header > nav.smallView > ul > li:nth-child(3) > a:hover {
+    background-color: #5c1a1b;
+    color: white;
+}
+
+/*css for services--------------------------------------------*/
+.services > header > nav.smallView > ul > li:nth-child(1) > a {
+    background-color: #c6b36a;
+    color: black;
+}
+
+.services > header > nav.smallView > ul > li:nth-child(4) > a{
+    background-color: #7a6b2c;
+    color: white;
+}
+.services > header > nav.smallView > ul > li:nth-child(4) > a:hover,
+.services > header > nav.smallView > ul > li:nth-child(1) > a:hover  {
+    background-color: #5c1a1b;
+    color: white;
+}

@@ -136,4 +136,54 @@ header {
         justify-content: space-between;
      }
      #footerFlx > div.footerAddress > a {padding-left: 10px;}
+
+/* css for attributions page--------------------------------------------------------------------------------*/
+.attributions main {
+    display: block;
+}
+.attributions #largeView > ul > li:nth-child(1) > a{
+    color: black;
+  }
+  .attributions #largeView > ul > li:nth-child(1) > a:hover {
+    color: white;
+    background-color: #5c1a1b;
+   }
+
+/*css for temple page---------------------------------------------------------------------------------*/   
+.temple header .heading #largeView ul  li:nth-child(1) a {
+    color: black;
+}
+.temple header .heading #largeView ul  li:nth-child(2) a {
+    color: white;
+}
+/*css for reservation------------------------------------------*/
+.reservation header .heading #largeView ul  li:nth-child(1) a {
+    color: black;
+}
+.reservation header .heading #largeView ul  li:nth-child(1) a:hover {
+    color: white;}
+
+.reservation header .heading #largeView ul  li:nth-child(3) a {
+        background-color: #7a6b2c;
+        color: white;
+    }
+.reservation header .heading #largeView ul  li:nth-child(3) a:hover{
+    background-color: #5c1a1b;
+
+} 
+/*css for services--------------------------------------------------------*/
+.services header .heading #largeView ul  li:nth-child(1) a {
+    color: black;
+}
+.services header .heading #largeView ul  li:nth-child(1) a:hover {
+    color: white;}
+
+.services header .heading #largeView ul  li:nth-child(4) a {
+        background-color: #7a6b2c;
+        color: white;
+    }
+.services header .heading #largeView ul  li:nth-child(4) a:hover{
+    background-color: #5c1a1b;
+
+} 
 }
