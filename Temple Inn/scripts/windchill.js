@@ -33,18 +33,29 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-    //if weather.alerts.events not equal null then set inner html to the variable
-    //and display the thing
-    //else don't change the inner html and don't display the div.
+    const alertOut = document.querySelector('.weatherAlert')
+    let alertIn = weatherData.alerts
+    //let alertIn = 'cat'
+    //console.log(typeof alertIn)
     
-    //alertInfo.innerHTML = `${weatherData.current.temp}`
-    //alertInfo.innerHTML = `cat`
-    //alertInfo.innerHTML = `${weatherData.alerts.event}, ${weatherData.alerts.description}`;
+    
+    //if (typeof(alertIn) === "undefined")
+      //  {console.log('its undefined')}   
+
+    if (typeof (alertIn) === "undefined"){
+        alertOut.style.display = 'none'}
+    else {
+        alertInfo.innerHTML = `${alertIn.event}, ${alertIn.description}`;
+        const alertBtn = document.querySelector('.alertBtn');
+        alertBtn.addEventListener('click', () => {alertOut.classList.toggle('closed')}, false);}
+  
+
+    
     tempIn.innerHTML = `<strong>${weatherData.current.temp.toFixed(0)}</strong>`;
     day1temp.innerHTML = `${weatherData.daily[1].temp.day.toFixed(0)}`
     day2temp.innerHTML = `${weatherData.daily[2].temp.day.toFixed(0)}`
     day3temp.innerHTML = `${weatherData.daily[3].temp.day.toFixed(0)}`
-    //tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;*//
+    
     humidity.innerHTML = `${weatherData.current.humidity.toFixed(0)}`;
     //tempIn.innerHTML = `5`
     windSpeedIn.innerHTML = `${weatherData.current.wind_speed}`;
@@ -99,9 +110,3 @@ function roundToTwo(num) {
 /*place the wind chill number or NA on the page as needed.*/
 document.querySelector('#windChill').textContent = f
 }
-
-/*This is to turn off the weather alert*/
-const alertBtn = document.querySelector('.alertBtn');
-const weatherAlert = document.querySelector('.weatherAlert');
-
-alertBtn.addEventListener('click', () => {weatherAlert.classList.toggle('closed')}, false);
