@@ -12,8 +12,8 @@ fetch(requestInfo)
     temples.forEach(displayTemples);
     pullLocal();
     pullLocal1();
-    //pullLocal2();
-    //pullLocal3();
+    pullLocal2();
+    pullLocal3();
   });
 
 function pullLocal() {
@@ -22,6 +22,9 @@ function pullLocal() {
   console.log(btnReload);
   console.log(storedInput);
   btnReload.style.color = storedInput;
+  if (btnReload.style.color === "orange") {
+    btnReload.textContent = "Liked"}
+    else {btnReload.textContent = "like"}
 }
 
 function pullLocal1() {
@@ -30,6 +33,9 @@ function pullLocal1() {
   console.log(btnReload);
   console.log(storedInput);
   btnReload.style.color = storedInput;
+  if (btnReload.style.color === "orange") {
+    btnReload.textContent = "Liked"}
+    else {btnReload.textContent = "like"}
 }
 
 function pullLocal2() {
@@ -38,14 +44,20 @@ function pullLocal2() {
   console.log(btnReload);
   console.log(storedInput);
   btnReload.style.color = storedInput;
+  if (btnReload.style.color === "orange") {
+    btnReload.textContent = "Liked"}
+    else {btnReload.textContent = "like"}
 }
 
-function pullLoca3() {
+function pullLocal3() {
   const storedInput = localStorage.getItem("forth");
   let btnReload = document.querySelector(".forth .like");
   console.log(btnReload);
   console.log(storedInput);
   btnReload.style.color = storedInput;
+  if (btnReload.style.color === "orange") {
+    btnReload.textContent = "Liked"}
+    else {btnReload.textContent = "like"}
 }
 
 let state = true;
@@ -55,11 +67,13 @@ function likefirst() {
         let btnSpn = document.querySelector(".first .like");
         console.log(btnSpn);
         btnSpn.style.color = "orange";
+        btnSpn.innerHTML = "Liked";
         localStorage.setItem("first", "orange");
     } else {
         let btnSpn = document.querySelector(".first .like");
         console.log(btnSpn);
         btnSpn.style.color = "black";
+        btnSpn.innerHTML = "Like";
         localStorage.setItem("first", "black");
     }
     state = !state;
@@ -70,37 +84,50 @@ function likesecond() {
         let btnSpn = document.querySelector(".second .like");
         console.log(btnSpn);
         btnSpn.style.color = "orange";
+        btnSpn.innerHTML = "Liked";
         localStorage.setItem("second", "orange");
     } else {
         let btnSpn = document.querySelector(".second .like");
         console.log(btnSpn);
         btnSpn.style.color = "black";
+        btnSpn.innerHTML = "Like";
         localStorage.setItem("second", "black");
     }
     state = !state;
 }
 
-
-
-
-
-
-
-/*function like() {
+function likethird() {
     if (state) {
-        let btnSpn = document.querySelector(".first .like");
+        let btnSpn = document.querySelector(".third .like");
         console.log(btnSpn);
         btnSpn.style.color = "orange";
-        localStorage.setItem("first", "orange");
+        btnSpn.innerHTML = "Liked";
+        localStorage.setItem("third", "orange");
     } else {
-        let btnSpn = document.querySelector(".first .like");
+        let btnSpn = document.querySelector(".third .like");
         console.log(btnSpn);
         btnSpn.style.color = "black";
-        localStorage.setItem("first", "black");
+        btnSpn.innerHTML = "Like";
+        localStorage.setItem("third", "black");
     }
     state = !state;
-}*/
-
+}
+function likeforth() {
+    if (state) {
+        let btnSpn = document.querySelector(".forth .like");
+        console.log(btnSpn);
+        btnSpn.style.color = "orange";
+        btnSpn.innerHTML = "Liked";
+        localStorage.setItem("forth", "orange");
+    } else {
+        let btnSpn = document.querySelector(".forth .like");
+        console.log(btnSpn);
+        btnSpn.style.color = "black";
+        btnSpn.innerHTML = "Like";
+        localStorage.setItem("forth", "black");
+    }
+    state = !state;
+}
 
 
 let counter = 0;
