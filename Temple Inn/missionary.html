@@ -14,11 +14,8 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
 
-  <body class="attributions">
-    <div class="weatherAlert">
-      <span id="alertInfo"></span>
-      <button class="alertBtn"><span>X</span></button>
-    </div>
+  <body class="missionarySuites">
+    
     <header>
       <section class="heading">
         <picture>
@@ -87,10 +84,56 @@
         </ul>
       </nav>
     </header>
+
     <main>
-        <h2>This is where missionary stuff will go</h2>
-        <p>Missionary stuff</p>
-    </main>
+      <h2>Temple Missionary Suites</h2>
+      <div class="missionaryGrid">
+
+        <section class="Suites">
+          <h2>Suites</h2>
+          <img src="images/room-320w.webp" alt="Reception Hall">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perferendis? Recusandae nesciunt error nobis rerum consequatur dolor eius unde aliquam facere at, inventore iste, suscipit veniam blanditiis voluptatem officia porro!</p>
+        </section>
+
+        <section class="misPool">
+          <h2>Ammenities</h2>
+          <img src="images/pool-320w.webp" alt="food">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perferendis? Recusandae nesciunt error nobis rerum consequatur dolor eius unde aliquam facere at, inventore iste, suscipit veniam blanditiis voluptatem officia porro!</p>
+        </section>
+
+
+        <section class="contactForm">
+          <h2>Contact Us</h2>
+        <form action="/my-handling-form-page" method="post">
+          <ul class="res-ul">
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" required />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" required />
+            </li>
+            <li>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </li>
+            <li>
+              <label for="msg">Comment:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="resButtonLi">
+              <button class="resButton" type="submit" onclick="window.location.href='thank-you.html';">Reserve</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+
+      </div>
+     
+  </main>
+
+
     <footer>
       <div>
         <div class="icons">

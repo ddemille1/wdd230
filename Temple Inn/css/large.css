@@ -78,14 +78,16 @@ body > div.banner-box > img.bannerL{
     justify-content: space-evenly;
     grid-gap: 50px;
   }
+
+  body > main > div.section1pict, .section1, .weather, .forecast {
+    width: 100%;}
+
   .section1 {
     grid-column: 1/3;
   }
   .section1pict {
     grid-column: 1/2;
     grid-row: 2/4;
-    justify-self: center;
-    align-self: center;
   }
   
   footer {
@@ -125,7 +127,13 @@ body > div.banner-box > img.bannerL{
   .temple header .heading #largeView ul li:nth-child(2) a {
     color: white;
   }
-  /*css for reservation------------------------------------------*/
+
+  #templeDir {
+    display: block;
+  }
+ 
+
+  /*css for reservation--------------------------------------------------------------------------------------*/
   .reservation header .heading #largeView ul li:nth-child(1) a {
     color: black;
   }
@@ -140,7 +148,7 @@ body > div.banner-box > img.bannerL{
   .reservation header .heading #largeView ul li:nth-child(3) a:hover {
     background-color: #5c1a1b;
   }
-  /*css for services--------------------------------------------------------*/
+  /*css for services--------------------------------------------------------------------------------*/
 
   /*for havigation*/
   .services header .heading #largeView ul li:nth-child(1) a {
@@ -234,4 +242,36 @@ body > div.banner-box > img.bannerL{
   .free-amenities p {
     column-count: 3;
   }
+
+  /*css for receptions and missionary suites-----------------------------------------------------------------*/
+.receptionPage main,
+.missionarySuites main {
+    display: block;
+}
+.receptionPage header .heading #largeView ul li:nth-child(1) a,
+.missionarySuites header .heading #largeView ul li:nth-child(1) a {
+    color: black;
+  }
+  .receptionPage header .heading #largeView ul li:nth-child(1) a:hover,
+  .missionarySuites header .heading #largeView ul li:nth-child(1) a:hover {
+    color: white;
+  }
+/*for missionary page-----------------------------------------------------------------*/
+body > main > div > section.contactForm > form > ul > li input,
+body > main > div > section.contactForm > form > ul > li textarea {
+    max-width: 170px;
+}
+
+body > main > div > section.contactForm > form {
+    padding-top: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 75%;
+    
+}
+
+
+
 }

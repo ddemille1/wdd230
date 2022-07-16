@@ -46,3 +46,8 @@ body > div.banner-box > img.bannerS {
     justify-content: left;
   }      
 }
+
+/*css for missionary page -------------------------------------------------------------------------------------*/
+.contactForm form {
+   width: 80%;
+}

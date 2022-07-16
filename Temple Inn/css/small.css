@@ -210,16 +210,17 @@ main h2 {color: white;
         font-family: Arial, Helvetica, sans-serif}
 
 body > main > div.section1pict,
-.section1,
 .weather, 
 .forecast {
     display: block;
     width: 90%;
     margin: 0 auto;
     background-color: #5c1a1b;
-    padding-top: 20px;
-    
+    padding-top: 20px; 
 }
+
+.section1 p {background-color: #16324f;}
+
 .section1pict img, 
 .section2pict img {
     display: block;
@@ -344,7 +345,7 @@ footer a:active {
     display: none;
 }
 
-/*css for reservations page--------------------------------------------------------------------*/
+/*css for reservations page-------------------------------------------------------------------------------------------*/
 
 .reservation > header > nav.smallView > ul > li:nth-child(1) > a {
     background-color: #c6b36a;
@@ -502,7 +503,7 @@ footer a:active {
     
    
    
-    /*css for Attributions page-----------------------------------------------------*/
+    /*css for Attributions page--------------------------------------------------------------------------------------------*/
     .attributions .weatherAlert {
         display: none;}
     
@@ -540,23 +541,32 @@ footer a:active {
 }
 
 /*for temple cards*/
+
+.cards {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
 .temple .cards section {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: #5c1a1b;
     width: 90%;
-    padding-top: 10px;
 }
 
 #templeDir > div > section > img{
     display: block;
     margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
 }
 
 #templeDir > div > section > span > button{
     display: block;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 25px;
     
         background-color: #5c1a1b;
         padding: 10px;
@@ -566,11 +576,14 @@ footer a:active {
 
 
 }
-.temple .cards section p,
-.temple .cards section h3 {
-    text-align: center;
-}
 
+.temple .cards section h2 {
+    text-align: center;
+    padding-top: 0;
+}
+.temple .cards section p {
+    text-align: left;
+}
 
 /*css for services-------------------------------------------------------------------------------------------------------------------------*/
 .services > header > nav.smallView > ul > li:nth-child(1) > a {
@@ -617,3 +630,38 @@ body > main > div.amenities-content > a{
     display: block;
     margin: 0 auto;
 }
+
+/*css for reception page-----------------and missionary suite page------------------------------------------------------------------------------*/
+
+.receptionGrid, .missionaryGrid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+.receptionGrid section, .missionaryGrid section {
+    display: block;
+    background-color: #5c1a1b;
+    margin: 20px;
+}
+.receptionGrid section img,
+.missionaryGrid section img
+ {
+    display: block;
+    margin: 0 auto;
+}
+
+.receptionPage > header > nav.smallView > ul > li:nth-child(1) > a,
+.missionarySuites > header > nav.smallView > ul > li:nth-child(1) > a {
+    background-color: #c6b36a;
+    color: black;
+}
+
+.receptionPage > header > nav.smallView > ul > li:nth-child(1) > a:hover,
+.missionarySuites > header > nav.smallView > ul > li:nth-child(1) > a:hover  {
+    background-color: #5c1a1b;
+    color: white;
+}
+
+/*css for missionary suites page-------------------------------------------------------------------------------------------------------------*/
