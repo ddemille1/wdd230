@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Tangerine&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+/*Header------------------------------------------------------------------------------------------*/
 .weatherAlert {
     background-color: red;
     display: flex;
@@ -141,47 +142,61 @@ ul {display: flex;
 li {display: flex; 
     padding: 0 1rem 0; 
     }       
-/*li a:link {
-    color: #242b86fd;
-}
-li a:visited {
-        color: #510e9e;
-}
-li a:hover {
-    color: #ff0000;
-}
-li a:active {
-    color: #0000FF;}
-    */
+/*for homepage------------------------------------------------------------------------------*/
 main {
     display: block;
     }
 
-    .banner {
+    /*css for banner box ------*/
+    body > div.banner-box > img.bannerM, 
+    body > div.banner-box > img.bannerL {
         display: none;
     }
+
+      .banner-box {
+        position: relative;
+        width: 350px;
+        height: 235px;
+        margin: 20px auto; 
+      }
+
+      .banner-box img .bannerS {
+       position: absolute;
+       display: block;
+       margin:0 auto;
+       top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+    
+      .action {
+        position: absolute;
+        background-color: rgba(240, 240, 240, 0.6);
+        top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      margin:0 auto;
+      padding: 20px;
+      
+      }
+      .action h3 {
+        font-size: 24px;        
+      }
+    
     .action button {
-    line-height: 2em;
-    width: 10em;
+   
+        width: 10em;
         background-color: #5c1a1b;
         color: white;
-    }
-
-    .action{
-        /*grid-column: 1/-1;
-        grid-row: 1;*/
-        background-color:  rgba(240, 240, 240, 0.6);
-        margin: 20px 20px;
+        font-size: 24px;
         padding: 10px;
-        text-align: center; 
+        border-radius: 10px;
+        border: 5px outset lightgray;
     }
 
-    body > main > div.banner-box > div > h3{
-        margin: 10px;
-        padding: 20px;
-        line-height: 45px;
-    }
-h3 {
+    /*main page*/
+
+    h3 {
     font-size: 35px;
     line-height: 15px;
     text-shadow: 1px 1px #FFFFFF;
@@ -194,11 +209,21 @@ main h2 {color: white;
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif}
 
-        body > main > div.section1pict, body > main > div.section2pict {
-    display: flex;
-    justify-content: center;
+body > main > div.section1pict,
+.section1,
+.weather, 
+.forecast {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #5c1a1b;
+    padding-top: 20px;
+    
 }
-.section1pict img, .section2pict img {
+.section1pict img, 
+.section2pict img {
+    display: block;
+    margin: 0 auto;
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 5px 5px 5px #999;
@@ -211,14 +236,15 @@ main p {background-color:  #5c1a1b;
         font-size: 1.5rem;
         padding: 10px 30px;
         text-align: left;}
+        
+        
+        
 /* for weather */     
+
 .weather {
-    background-color: #5c1a1b;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center;  
 }        
 body > main > div.weather > div{
-    display: flex;
     justify-content: center;
 }
 #weatherIcon {
@@ -231,10 +257,13 @@ body > main > div.weather > h3:nth-child(3), body > main > div.weather > h3:nth-
     text-shadow: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-.weather p {
+.weather p,
+.forecast p {
     text-align: center;
 }
 
+
+/*for footer---------------*/
 footer {background-color: #c6b36a;
     max-width: 960px;
     margin: 0 auto;
@@ -268,9 +297,6 @@ footer div {
     display: none;
 }
 .social {
-    /*margin-left: auto;
-    align-self: flex-start;
-    padding-top: 16px;*/
     justify-content: center;
     padding-bottom: 20px;
 }
@@ -318,12 +344,32 @@ footer a:active {
     display: none;
 }
 
-    /*css for reservations page*/
-    .reservations {display: block;}
+/*css for reservations page--------------------------------------------------------------------*/
+
+.reservation > header > nav.smallView > ul > li:nth-child(1) > a {
+    background-color: #c6b36a;
+    color: black;
+}
+
+.reservation > header > nav.smallView > ul > li:nth-child(3) > a{
+    background-color: #7a6b2c;
+    color: white;
+}
+
+.reservation > header > nav.smallView > ul > li > a:hover {
+    background-color: #5c1a1b;
+    color: white;
+}
+.reservation > header > nav.smallView > ul > li:nth-child(3) > a:hover {
+    background-color: #5c1a1b;
+    color: white;
+}
+    
+.reservations {display: block;}
     form {
         /* Center the form on the page */
         margin: 0 auto;
-        width: 600px;
+        width: 90%;
         /* Form outline */
         padding: 1em;
         border: 1px solid #CCC;
@@ -380,20 +426,23 @@ footer a:active {
         height: 5em;
       }
       
-      .button {
-        /* Align buttons with the text fields */
-        padding-left: 150px; /* same size as the label elements */
+      .resButtonLi {
+        justify-content: center;
+      }
+      .resButton {
+        color: white;
+        background-color: #5c1a1b;
+        padding: 10px;
+        border-radius: 5px;
+        border: 5px outset lightgray;
+        font-size: 24px;
+
       }
       
-      button {
-        /* This extra margin represent roughly the same space as the space
-           between the labels and their text fields */
-        margin-left: 10px;
-      }
     
-    /*end of reservations css*/
+
     
-    /* css for temple spotlight */
+    /* css for temple spotlight ---------------------------------------------------------------------------------------------*/
     .temple-spotlight {
         max-width: 960px;
         margin: 0 auto;
@@ -451,93 +500,7 @@ footer a:active {
         left: 30px; 
     }
     
-    /*css for ammenities section*/
-    
-    .amenities {
-        max-width: 960px;
-        margin: 0 auto;
-        font-size: 2rem;
-        display: block;
-    }
-    .amenities-banner {
-        text-align: center;
-        position: relative;
-        top: -45px;
-        height: 600px;
-    }
-    .amenities-banner h2 {
-        position: relative;
-        text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black;
-        top: 120px;
-        text-align: left;
-        left: 175px;
-    }.amenities-banner p{
-        width: 250px;
-        position: relative;
-        bottom: 185px;
-        left: 570px;
-        }
-    
-    .amenities-content {
-        position: relative;
-        display: grid;
-        grid-template-columns: 270px 270px 270px;
-        grid-gap: 75px;
-    }
-    
-    .changing-rooms, .childcare, .kitchenettes, .sitting-area, .reception-hall, .family-history, .free-amenities, .free-amenities ul 
-    {
-        display: block;
-        justify-self: center;}
-    .childcare img {
-        position: relative;
-        left: 25px;
-    }
-    .kitchenettes img {
-        position: relative;
-        left: 25px;
-    }
-    .family-history img {
-        position: relative;
-        left: 25px;
-    }
-    
-    .closing-img {
-        position: relative;
-        -webkit-box-align:center;
-        -webkit-box-pack:center;
-        display:-webkit-box;}
-    
-    .changing-rooms img, .childcare img, .kitchenettes img, .sitting-area img, .reception-hall img, .family-history img{
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 5px 5px 5px #999;}
-    
-    .last-section {
-        position: relative;
-    }
-    .free-amenities {
-        /*position: absolute;
-        top: 70px;
-        left: 100px;*/
-        width: 960px;
-    }
-    .free-amenities p {
-        column-count: 3;
-    }
-    .free-amenities h2 {
-        text-shadow: 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black, 0px 0px 15px black
-    }
-    
-    .cookies{
-        text-align: center;
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 5px 0;
-        font-size: 2rem;
-        display: block;
-        margin-bottom: 20px;
-    }
+   
    
     /*css for Attributions page-----------------------------------------------------*/
     .attributions .weatherAlert {
@@ -556,7 +519,7 @@ footer a:active {
         color: white;
     }
 
-/*css for temple page-----------------------------------*/
+/*css for temple page--------------------------------------------------------------------------------------------------------------*/
 
 /*for nav wayfinding*/
 .temple .weatherAlert {
@@ -579,29 +542,37 @@ footer a:active {
 /*for temple cards*/
 .temple .cards section {
     display: block;
-}
-
-/*css for reservations------------------------------------*/
-.reservation > header > nav.smallView > ul > li:nth-child(1) > a {
-    background-color: #c6b36a;
-    color: black;
-}
-
-.reservation > header > nav.smallView > ul > li:nth-child(3) > a{
-    background-color: #7a6b2c;
-    color: white;
-}
-
-.reservation > header > nav.smallView > ul > li > a:hover {
+    margin: 0 auto;
     background-color: #5c1a1b;
-    color: white;
-}
-.reservation > header > nav.smallView > ul > li:nth-child(3) > a:hover {
-    background-color: #5c1a1b;
-    color: white;
+    width: 90%;
+    padding-top: 10px;
 }
 
-/*css for services--------------------------------------------*/
+#templeDir > div > section > img{
+    display: block;
+    margin: 0 auto;
+}
+
+#templeDir > div > section > span > button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+        background-color: #5c1a1b;
+        padding: 10px;
+        border-radius: 5px;
+        border: 5px outset lightgray;
+        font-size: 24px;
+
+
+}
+.temple .cards section p,
+.temple .cards section h3 {
+    text-align: center;
+}
+
+
+/*css for services-------------------------------------------------------------------------------------------------------------------------*/
 .services > header > nav.smallView > ul > li:nth-child(1) > a {
     background-color: #c6b36a;
     color: black;
@@ -615,4 +586,34 @@ footer a:active {
 .services > header > nav.smallView > ul > li:nth-child(1) > a:hover  {
     background-color: #5c1a1b;
     color: white;
+}
+
+body > main > div.amenities-content > a{
+    text-decoration: none;
+}
+
+.amenities-banner {
+    display: none;
+}
+.reception, .missionary, .family-history, .free-amenities {
+    display: block;
+    background-color: #5c1a1b;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.changing-rooms img, .reception img, .missionary img, .sitting-area img, .reception-hall img, .family-history img{
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;}
+
+.closing-img {
+    display: none;
+}
+
+.amenities-content a section img,
+.family-history img {
+    display: block;
+    margin: 0 auto;
 }

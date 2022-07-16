@@ -18,4 +18,31 @@
     .hamburgerBtn{
         margin-left: 5px;
     }
+
+/*css for services section -----------------------------------------------------------*/
+/*css for homepage---------------------------------------------------------------------*/
+body > div.banner-box > img.bannerS {
+        display: none;
+    }
+
+    body > div.banner-box > img.bannerM{
+        position: absolute;
+        display: block;
+        margin:0 auto;
+        top: 50%;
+       left: 50%;
+       transform: translate(-50%, -60%);
+       }    
+      .banner-box {
+        position: relative;
+        width: 90%;
+        height: 235px;
+        margin: 20px auto; 
+      }
+      
+
+/*css for reservations-----------------------------------------------------------------------*/
+.resButtonLi {
+    justify-content: left;
+  }      
 }
