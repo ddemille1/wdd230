@@ -219,7 +219,11 @@ body > main > div.section1pict,
     padding-top: 20px; 
 }
 
-.section1 p {background-color: #16324f;}
+.section1 p {background-color: #16324f;
+text-indent: 15px;}
+.section1pict {
+    text-indent: 15px;
+}
 
 .section1pict img, 
 .section2pict img {
@@ -444,7 +448,7 @@ footer a:active {
 
     
     /* css for temple spotlight ---------------------------------------------------------------------------------------------*/
-    .temple-spotlight {
+    /*.temple-spotlight {
         max-width: 960px;
         margin: 0 auto;
         font-size: 2rem;
@@ -500,7 +504,7 @@ footer a:active {
         position: relative;
         left: 30px; 
     }
-    
+    */
    
    
     /*css for Attributions page--------------------------------------------------------------------------------------------*/
@@ -585,6 +589,9 @@ footer a:active {
     text-align: left;
 }
 
+.temple ul {
+    display: block;
+}
 /*css for services-------------------------------------------------------------------------------------------------------------------------*/
 .services > header > nav.smallView > ul > li:nth-child(1) > a {
     background-color: #c6b36a;
@@ -631,6 +638,13 @@ body > main > div.amenities-content > a{
     margin: 0 auto;
 }
 
+.amenities p {
+    text-indent: 15px;
+}
+.last-section p{
+    text-indent: 0px;
+}
+
 /*css for reception page-----------------and missionary suite page------------------------------------------------------------------------------*/
 
 .receptionGrid, .missionaryGrid {
@@ -664,4 +678,11 @@ body > main > div.amenities-content > a{
     color: white;
 }
 
+.receptionGrid p {
+    text-indent: 15px;
+}
 /*css for missionary suites page-------------------------------------------------------------------------------------------------------------*/
+
+.missionaryGrid p {
+    text-indent: 15px;
+}

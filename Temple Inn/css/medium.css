@@ -45,9 +45,12 @@ body > div.banner-box > img.bannerS {
 .resButtonLi {
     justify-content: left;
   }      
+.reservations form {
+    max-width: 500px;
 }
 
 /*css for missionary page -------------------------------------------------------------------------------------*/
 .contactForm form {
    width: 80%;
+}
 }

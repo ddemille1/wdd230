@@ -151,7 +151,9 @@ function displayTemples(temple) {
   let p1 = document.createElement("p");
   let p2 = document.createElement("p");
   let p3 = document.createElement("p");
-  let p4 = document.createElement("p");
+  let ul1 = document.createElement("ul");
+  let li1 = document.createElement("li")
+  let li2 = document.createElement("li")
   let p5 = document.createElement("p");
   let p6 = document.createElement("p");
   let p7 = document.createElement("p");
@@ -161,7 +163,9 @@ function displayTemples(temple) {
   p1.textContent = `Address: ${temple.address}`;
   p2.textContent = `Phone: ${temple.phone}`;
   p3.textContent = `Email: ${temple.email}`;
-  p4.textContent = `Services: ${temple.services}`;
+  ul1.textContent = `Services: `;
+  li1.textContent = `${temple.services[0]}`;
+  li2.textContent = `${temple.services[1]}`;
   p5.textContent = `History: ${temple.history}`;
   p6.textContent = `Ordinance Scheduel: ${temple.ordSched}`;
   p7.textContent = `Session Schedule: ${temple.sesSched}`;
@@ -177,7 +181,9 @@ function displayTemples(temple) {
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(p3);
-  card.appendChild(p4);
+  card.appendChild(ul1);
+  ul1.appendChild(li1);
+  ul1.appendChild(li2);
   card.appendChild(p5);
   card.appendChild(p6);
   card.appendChild(p7);

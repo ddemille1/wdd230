@@ -11,6 +11,11 @@ const day1temp = document.querySelector("#day1temp")
 const day2temp = document.querySelector("#day2temp")
 const day3temp = document.querySelector("#day3temp")
 
+const day1 = document.querySelector("#day1")
+const day2 = document.querySelector("#day2")
+const day3 = document.querySelector("#day3")
+
+
 //const url = "https://api.openweathermap.org/data/2.5/weather?id=4517586&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
 
 const url = "https://api.openweathermap.org/data/2.5/onecall?lat=39.415352&lon=-81.454842&exclude=hourly,minutely&appid=00ea60318b73a6283c6a3e0101a40d75&units=imperial"
@@ -33,6 +38,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
+    
     const alertOut = document.querySelector('.weatherAlert')
     let alertIn = weatherData.alerts
     //let alertIn = 'cat'
@@ -56,6 +62,25 @@ function displayResults(weatherData) {
     day2temp.innerHTML = `${weatherData.daily[2].temp.day.toFixed(0)}`
     day3temp.innerHTML = `${weatherData.daily[3].temp.day.toFixed(0)}`
     
+    day1.innerHTML = `${conversion(1)}: ` 
+    day2.innerHTML = `${conversion(2)}: ` 
+    day3.innerHTML = `${conversion(3)}: `    
+
+
+    function conversion (number){
+    //console.log(weatherData.daily[number].dt)
+    let tomorrow = weatherData.daily[number].dt * 1000
+    //console.log(tomorrow)
+
+    let dateOjb = new Date(tomorrow)
+    //console.log(dateOjb)
+
+    let weekday = dateOjb.toLocaleString("en-US", {weekday: "long"})
+    //console.log(weekday)
+    return weekday
+}
+
+
     humidity.innerHTML = `${weatherData.current.humidity.toFixed(0)}`;
     //tempIn.innerHTML = `5`
     windSpeedIn.innerHTML = `${weatherData.current.wind_speed}`;
