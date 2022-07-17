@@ -524,6 +524,10 @@ footer a:active {
         color: white;
     }
 
+    .attributions main p {
+        background-color: #16324f;
+    }
+
 /*css for temple page--------------------------------------------------------------------------------------------------------------*/
 
 /*for nav wayfinding*/
@@ -589,8 +593,14 @@ footer a:active {
     text-align: left;
 }
 
-.temple ul {
+.temple .cards ul {
     display: block;
+}
+
+.cards ul li,
+.cards ul {
+    color: white;
+    font-size: 20px;
 }
 /*css for services-------------------------------------------------------------------------------------------------------------------------*/
 .services > header > nav.smallView > ul > li:nth-child(1) > a {

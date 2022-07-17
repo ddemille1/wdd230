@@ -3,7 +3,7 @@
         {
             "name": "Provo City Center",
             "imageName": "images/batch/provo-320.jpg",
-            "address": "50 South University Ave, Provo UT 84601, United States",
+            "address": ["50 South University Ave", "Provo UT 84601", "United States"],
             "phone": "(1) 801-343-2700",
             "email": "see website",
             "services": ["Clothing rental available", 
@@ -29,11 +29,11 @@
             "United States"],
             "phone": "closed for renovation",
             "email": "closed for renovation",
-            "services": "closed for renovation",
+            "services": ["closed for renovation"],
             "history": "Dedicated 19 November 1974",
             "ordSched": "closed for renovation",
             "sesSched": "closed for renovation",
-            "closSched": "Temple will reopen 30 August 2022"
+            "closSched": ["Temple will reopen 30 August 2022"]
         },
         {   "name": "Vernal Utah",
             "imageName": "images/batch/vernal-320.jpg",
