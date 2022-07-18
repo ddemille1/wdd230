@@ -31,14 +31,15 @@ body > div.banner-box > img.bannerS {
         margin:0 auto;
         top: 50%;
        left: 50%;
-       transform: translate(-50%, -60%);
+       transform: translate(-50%, -40%);
        }    
       .banner-box {
         position: relative;
         width: 90%;
-        height: 235px;
+        height: 170px;
         margin: 20px auto; 
       }
+      
       
 
 /*css for reservations-----------------------------------------------------------------------*/

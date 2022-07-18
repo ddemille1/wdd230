@@ -24,7 +24,7 @@ function pullLocal() {
   btnReload.style.color = storedInput;
   if (btnReload.style.color === "lightgray") {
     btnReload.textContent = "Liked"}
-    else {btnReload.textContent = "like"}
+    else {btnReload.textContent = "Like"}
 }
 
 function pullLocal1() {
@@ -35,7 +35,7 @@ function pullLocal1() {
   btnReload.style.color = storedInput;
   if (btnReload.style.color === "lightgray") {
     btnReload.textContent = "Liked"}
-    else {btnReload.textContent = "like"}
+    else {btnReload.textContent = "Like"}
 }
 
 function pullLocal2() {
@@ -46,7 +46,7 @@ function pullLocal2() {
   btnReload.style.color = storedInput;
   if (btnReload.style.color === "lightgray") {
     btnReload.textContent = "Liked"}
-    else {btnReload.textContent = "like"}
+    else {btnReload.textContent = "Like"}
 }
 
 function pullLocal3() {
@@ -57,7 +57,7 @@ function pullLocal3() {
   btnReload.style.color = storedInput;
   if (btnReload.style.color === "lightgray") {
     btnReload.textContent = "Liked"}
-    else {btnReload.textContent = "like"}
+    else {btnReload.textContent = "Like"}
 }
 
 let state = true;
