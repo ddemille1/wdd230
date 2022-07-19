@@ -148,6 +148,10 @@ body > div.banner-box > img.bannerL{
   .reservation header .heading #largeView ul li:nth-child(3) a:hover {
     background-color: #5c1a1b;
   }
+
+  #room_type {
+    font-size: 20px;
+  }
   /*css for services--------------------------------------------------------------------------------*/
 
   /*for havigation*/
