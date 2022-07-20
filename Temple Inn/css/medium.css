@@ -19,6 +19,13 @@
         margin-left: 5px;
     }
 
+    .action {
+        top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+
+      padding: 10px;}
+
 /*css for services section -----------------------------------------------------------*/
 /*css for homepage---------------------------------------------------------------------*/
 body > div.banner-box > img.bannerS {
